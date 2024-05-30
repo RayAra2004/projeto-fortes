@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="shortcut icon" href="../imgs/png/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<script>
+    function navigateIndex(){
+        window.location.href = "./../"
+    }
+</script>
+<body>
+    <header>
+        <img onclick="navigateIndex()" id="logo" src="../imgs/png/logo.png" alt="Logo com mãos dadas em forma de coração e escrita a palavra Fortes abaixo">
+    </header>
+    <main>
+        <form method="post" id="formSignUp">
+            <div class="input">
+                <label for="name">Informe seu nome:</label>
+                <input class="input_text" placeholder="Nome Instituição" type="text" name="name" id="name">
+            </div>
+
+            <div class="input">
+                <label for="phone">Informe seu telefone:</label>
+                <input class="input_text" placeholder="Telefone" type="phone" name="telefone" id="telefone">
+            </div>
+
+            <div class="input">
+                <label for="email">Informe seu email:</label>
+                <input class="input_text" placeholder="Email" type="email" name="email" id="email">
+            </div>
+
+            <div class="input">
+                <label for="password">Informe sua senha:</label>
+                <input class="input_text" placeholder="Senha" type="password" name="password" id="password">
+            </div>
+
+            <div class="input">
+                <label for="confirmPassword">Confirme sua senha:</label>
+                <input class="input_text" placeholder="Confirmar Senha" type="password" name="confirmPassword" id="confirmPassword">
+            </div>
+
+            <div class="btns">
+                <button class="btn" type="submit">CADASTRAR</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
