@@ -22,6 +22,31 @@ header{
     background-color: var(--blue-primary-color);
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: end;
+    flex: 3;
+    gap: 30px;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav a:hover{
+    border-bottom: #fff 2px solid;
+}
+
 #logo{
     height: 100%;
     object-fit: cover;
