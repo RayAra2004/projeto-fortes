@@ -27,27 +27,27 @@
         <form method="post" id="formSignUp">
             <div class="input">
                 <label for="name">Informe seu nome:</label>
-                <input class="input_text" placeholder="Nome Instituição" type="text" name="name" id="name">
+                <input class="input_text" placeholder="Nome Instituição" type="text" name="name" id="name" required>
             </div>
 
             <div class="input">
                 <label for="phone">Informe seu telefone:</label>
-                <input class="input_text" placeholder="Telefone" type="phone" name="telefone" id="telefone">
+                <input class="input_text" placeholder="Telefone" type="phone" name="telefone" id="telefone" required>
             </div>
 
             <div class="input">
                 <label for="email">Informe seu email:</label>
-                <input class="input_text" placeholder="Email" type="email" name="email" id="email">
+                <input class="input_text" placeholder="Email" type="email" name="email" id="email" required>
             </div>
 
             <div class="input">
                 <label for="password">Informe sua senha:</label>
-                <input class="input_text" placeholder="Senha" type="password" name="password" id="password">
+                <input class="input_text" placeholder="Senha" type="password" name="password" id="password" required>
             </div>
 
             <div class="input">
                 <label for="confirmPassword">Confirme sua senha:</label>
-                <input class="input_text" placeholder="Confirmar Senha" type="password" name="confirmPassword" id="confirmPassword">
+                <input class="input_text" placeholder="Confirmar Senha" type="password" name="confirmPassword" id="confirmPassword" required>
             </div>
 
             <div class="btns">
@@ -55,5 +55,7 @@
             </div>
         </form>
     </main>
+
+    <script src="./../js/cadastro.js"></script>
 </body>
 </html>
