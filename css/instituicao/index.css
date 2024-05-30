@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: end;
+    flex: 3;
+    gap: 30px;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav a:hover{
+    border-bottom: #fff 2px solid;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div{
+    width: 80%;
+    background-color: var(--blue-primary-color);
+    color: #fff;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 30px;
+}
