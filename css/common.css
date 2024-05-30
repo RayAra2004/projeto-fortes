@@ -1,0 +1,57 @@
+:root{
+    --blue-primary-color: #0B1957;
+    --blue-secundary-color: #5784E6;
+    --pink-primary-color: #fa9ebd;
+    --lilac-primary-color: #F4D1FF;
+}
+
+html, body, .container-fluid {
+    height: 100%;
+}
+
+html, body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: rgb(231,220,242);
+    background-image: linear-gradient(90deg, #E7DCF2 0%, #FFE4E8 100%);
+}
+
+header{
+    height: 147px;
+    background-color: var(--blue-primary-color);
+}
+
+#logo{
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.input_text{
+    width: 300px;
+    height: 56.25px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.input_text::placeholder{
+    font-size: 16px;
+}
+
+.btn{
+   width: 305px; 
+   height: 66px;
+   background-color: var(--blue-primary-color);
+   border: none;
+   border-radius: 10px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   color: #fff;
+   text-transform: uppercase;
+   cursor: pointer;
+}

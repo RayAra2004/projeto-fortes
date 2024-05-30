@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortes</title>
+
+    <link rel="shortcut icon" href="./imgs/png/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="./imgs/png/logo.png" alt="Logo com mãos dadas em forma de coração e escrita a palavra Fortes abaixo">
+    </header>
+    <main>
+        <form method="post" id="formLogin">
+            <div class="input">
+                <label for="email">Informe seu email:</label>
+                <input class="input_text" placeholder="Email" type="email" name="email" id="email" required>
+            </div>
+
+            <div class="input">
+                <label for="password">Informe sua senha:</label>
+                <input class="input_text" placeholder="Senha" type="password" name="password" id="password" required>
+            </div>
+            
+            <a href="./pages/esqueciSenha.html">Esqueci minha senha</a>
+
+            <div class="btns">
+                <button class="btn" type="submit">ENTRAR</button>
+                <button id="signUp" class="btn" type="button">CADASTRAR</button>
+            </div>
+        </form>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>

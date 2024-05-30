@@ -1,0 +1,42 @@
+main{
+    height: 80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > a{
+    margin: 20px 0px;
+    color: black;
+}
+
+.input{
+    font-size: 18px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.input:nth-child(1){
+    margin-bottom: 70px;
+}
+
+.input label{
+    margin-bottom: 10px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
