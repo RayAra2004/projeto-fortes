@@ -8,7 +8,7 @@ function header(page){
                 <img onclick="navigateIndex()" id="logo" src="./../../imgs/png/logo.png" alt="Logo com mãos dadas em forma de coração e escrita a palavra Fortes abaixo">
                 <nav>
                     <a href="editaisAbertos.html">EDITAIS ABERTOS</a>
-                    <a href="acomapanharProjetos.html">ACOMPANHAR PROJETOS</a>
+                    <a href="acompanharProjetos.html">ACOMPANHAR PROJETOS</a>
                     <a href="meuPerfil.html">MEU PERFIL</a>
                     <a href="ajuda.html">AJUDA</a>
                     <a href="./../../">
