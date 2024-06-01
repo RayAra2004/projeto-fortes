@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script src="./../../components/cardPublicNotices.js"></script>
+    <script src="./../../components/filters.js"></script>
 </head>
 <script>
     function navigateIndex(){
@@ -24,15 +25,10 @@
 <body>
     <header></header>
     <main>
-        <section class="filters">
-            <div id="filter">
-                <img src="./../../imgs/svg/filter.svg" alt="Filtro">
-                <span>Filtrar</span>
-            </div>
-            <div id="search_bar">
-                <input class="input_text" placeholder="Pesquisar" type="text">
-                <img src="./../../imgs/svg/search.svg" alt="">
-            </div>
+        <section id="filters" class="filters">
+            <script>
+                filters();
+            </script>
         </section>
         <section id="openNotices">
             <script>
