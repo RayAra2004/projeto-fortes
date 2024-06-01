@@ -1,3 +1,26 @@
+/* Estilizando a barra de rolagem vertical */
+::-webkit-scrollbar {
+    width: 7px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(241, 241, 241, 0.1); /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-secundary-color); /* Cor da barra de rolagem */
+    border-radius: 6px; /* Borda arredondada da barra de rolagem */
+}
+
+/* Estilizando a barra de rolagem horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 12px; /* Altura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor da barra de rolagem ao passar o mouse */
+}
+
 :root{
     --blue-primary-color: #0B1957;
     --blue-secundary-color: #5784E6;
@@ -57,6 +80,10 @@ h2{
     font-size: 48px;
 }
 
+h4{
+    font-size: 24px;
+}
+
 .input_text{
     width: 300px;
     height: 56.25px;
@@ -103,8 +130,20 @@ h2{
 #search_bar{
     display: flex;
     align-items: center;
+    width: 317px;
 }
 
 #search_bar img{
     margin-left: -40px;
+}
+
+.cardPublicNotice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 132px;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 15px;
 }
