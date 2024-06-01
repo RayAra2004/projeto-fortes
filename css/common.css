@@ -110,6 +110,10 @@ h5{
     resize: none;
 }
 
+.input_text_area::placeholder{
+    line-height: 63px;
+}
+
 .btn{
    width: 305px; 
    height: 66px;
