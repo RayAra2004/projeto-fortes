@@ -16,9 +16,7 @@
 </head>
 
 <body>
-    <header>
-        <img id="logo" src="./imgs/png/logo.png" alt="Logo com mãos dadas em forma de coração e escrita a palavra Fortes abaixo">
-    </header>
+    <header></header>
     <main>
         <form method="post" id="formLogin">
             <div class="input">
@@ -40,5 +38,11 @@
         </form>
     </main>
     <script src="./js/index.js"></script>
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header();
+        })
+    </script>
 </body>
 </html>

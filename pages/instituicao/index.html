@@ -19,19 +19,7 @@
     }
 </script>
 <body>
-    <header>
-        <img onclick="navigateIndex()" id="logo" src="./../../imgs/png/logo.png" alt="Logo com mãos dadas em forma de coração e escrita a palavra Fortes abaixo">
-        <nav>
-            <a href="editaisAbertos.html">EDITAIS ABERTOS</a>
-            <a href="">ACOMPANHAR PROJETOS</a>
-            <a href="">MEU PERFIL</a>
-            <a href="">AJUDA</a>
-            <a href="">
-                <img src="./../../imgs/svg/logout.svg" alt="">
-                SAIR
-            </a>
-        </nav>
-    </header>
+    <header></header>
     <main>
         <div>
             <h2>
@@ -43,5 +31,11 @@
             </h2>
         </div>
     </main>
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header("instituicao");
+        })
+    </script>
 </body>
 </html>

@@ -20,9 +20,7 @@
     }
 </script>
 <body>
-    <header>
-        <img onclick="navigateIndex()" id="logo" src="../imgs/png/logo.png" alt="Logo com mãos dadas em forma de coração e escrita a palavra Fortes abaixo">
-    </header>
+    <header></header>
     <main>
         <form method="post" id="formRecoverPassword">
             <div class="input">
@@ -35,5 +33,11 @@
             </div>
         </form>
     </main>
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header("paginas");
+        })
+    </script>
 </body>
 </html>
