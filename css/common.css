@@ -84,6 +84,10 @@ h4{
     font-size: 24px;
 }
 
+h5{
+    font-size: 20px;
+}
+
 .input_text{
     width: 300px;
     height: 56.25px;
@@ -137,7 +141,7 @@ h4{
     margin-left: -40px;
 }
 
-.cardPublicNotice{
+.cardProject{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -146,6 +150,17 @@ h4{
     border: none;
     border-radius: 10px;
     padding: 0px 15px;
+}
+
+.cardProject > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cardProject .nameProject h5{
+    margin-bottom: 15px;
 }
 
 main{
@@ -158,4 +173,5 @@ main{
 
 main > section{
     width: 80%;
+    margin-bottom: 30px;
 }

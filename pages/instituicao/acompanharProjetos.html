@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhar Projetos</title>
+
+    <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/instituicao/acompanharProjetos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="./../../components/cardTrackProject.js"></script>
+    <script src="./../../components/filters.js"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section id="filters" class="filters">
+            <script>
+                filters();
+            </script>
+        </section>
+        <section id="trackProjects">
+           <script>
+                for(let i = 0; i < 5; i++){
+                    cardTrackProject("trackProjects");
+                }             
+           </script>
+        </section>
+    </main>
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header("instituicao");
+        })
+    </script>
+</body>
+</html>
