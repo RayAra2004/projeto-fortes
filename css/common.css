@@ -43,9 +43,6 @@ html, body{
 header{
     height: 147px;
     background-color: var(--blue-primary-color);
-}
-
-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,6 +98,16 @@ h5{
 
 .input_text::placeholder{
     font-size: 16px;
+}
+
+.date{
+    width: 285px;
+    padding-right: 15px;
+}
+
+.input_text_area{
+    height: 126px;
+    resize: none;
 }
 
 .btn{

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Proponente</title>
+
+    <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/instituicao/meuPerfil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="navProfile">
+            <nav>
+                <a href="meuPerfil.html">editar dados instituição</a>
+                <a href="meuPerfilResponsavel.html">editar dados responsável</a>
+                <a class="partSelected" href="meuPerfilProponente.html">editar dados proponente</a>
+            </nav>
+        </section>
+        <section class="formData">
+            <form action="" method="get">
+                <div>
+                    <div>
+                        <label for="briefHistory">Breve Histórico <span>*</span></label>
+                        <textarea placeholder="Breve Histórico" class="input_text input_text_area" type="text" id="briefHistory" name="briefHistory" required> </textarea>
+                    </div>
+                    <div>
+                        <label for="purpose">Finalidade da OCS <span>*</span></label>
+                        <textarea placeholder="Finalidade da OCS" class="input_text input_text_area" type="text" id="purpose" name="purpose" required> </textarea>
+                    </div>
+                    <div>
+                        <label for="targetAudience">Público Alvo de Atendimento <span>*</span></label>
+                        <textarea placeholder="Público Alvo de Atendimento" class="input_text input_text_area" type="text" id="targetAudience" name="targetAudience" required> </textarea>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="infrastructure">Infraestrutura <span>*</span></label>
+                        <textarea placeholder="Infraestrutura" class="input_text input_text_area" type="text" id="infrastructure" name="infrastructure" required> </textarea>
+                    </div>
+                    <div>
+                        <label for="mainActions">Principais Ações Desenvolvidas <span>*</span></label>
+                        <textarea placeholder="Principais Ações Desenvolvidas" class="input_text input_text_area" type="text" id="mainActions" name="mainActions" required> </textarea>
+                    </div>
+                    <div>
+                        <label for="reachRegions">Regiões de Alcance das Ações(Bairros) <span>*</span></label>
+                        <textarea placeholder="Regiões de Alcance das Ações(Bairros)" class="input_text input_text_area" type="text" id="reachRegions" name="reachRegions" required> </textarea>
+                    </div>
+                </div>
+                <div class="divBtns">
+                    <button class="btn" type="button">editar informações</button>
+                    <button class="btn" type="reset">cancelar</button>
+                    <button class="btn" type="submit">salvar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header("instituicao");
+        })
+    </script>
+</body>
+</html>

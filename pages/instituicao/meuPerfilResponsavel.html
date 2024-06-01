@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Responsável</title>
+
+    <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/instituicao/meuPerfil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="navProfile">
+            <nav>
+                <a href="meuPerfil.html">editar dados instituição</a>
+                <a class="partSelected" href="meuPerfilResponsavel.html">editar dados responsável</a>
+                <a href="meuPerfilProponente.html">editar dados proponente</a>
+            </nav>
+        </section>
+        <section class="formData">
+            <form action="" method="get">
+                <div>
+                    <div>
+                        <label for="name">Nome <span>*</span></label>
+                        <input placeholder="Nome Responsável" class="input_text" type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="role">Cargo na OCS <span>*</span></label>
+                        <input placeholder="ex: Diretor(a)" class="input_text" type="text" id="role" name="role" required>
+                    </div>
+                    <div>
+                        <label for="mandate">Mandato vigente até</label>
+                        <input placeholder="09/09/1999" class="input_text date" type="date" id="mandate" name="mandate">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="rg">RG <span>*</span></label>
+                        <input placeholder="1.234.567" class="input_text" type="text" id="rg" name="rg" required>
+                    </div>
+                    <div>
+                        <label for="oe">Orgão Expeditor <span>*</span></label>
+                        <input placeholder="SPTC" class="input_text" type="text" id="oe" name="oe" required>
+                    </div>
+                    <div>
+                        <label for="cpf">CPF <span>*</span></label>
+                        <input placeholder="123.456.789-00" class="input_text" type="text" id="cpf" name="cpf" required>
+                    </div>
+                </div>
+                <div class="divBtns">
+                    <button class="btn" type="button">editar informações</button>
+                    <button class="btn" type="reset">cancelar</button>
+                    <button class="btn" type="submit">salvar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header("instituicao");
+        })
+    </script>
+</body>
+</html>
