@@ -6,8 +6,16 @@ main{
     margin-top: 20px;
 }
 
-main > div{
+main > section{
     width: 80%;
+}
+
+#openNotices{
+    margin-top: 30px;
+}
+
+#openNotices > div{
+    margin-bottom: 30px;
 }
 
 
