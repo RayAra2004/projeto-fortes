@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editais Abertos</title>
+    <title>Visualizar Edital</title>
 
+    
     <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
@@ -14,29 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script src="./../../components/cardPublicNotices.js"></script>
-    <script src="./../../components/filters.js"></script>
-    <script src="./../../js/editaisAbertos.js"></script>
 </head>
-<script>
-    function navigateIndex(){
-        window.location.href = '/pages/instituicao/'
-    }
-</script>
 <body>
     <header></header>
     <main>
-        <section id="filters" class="filters">
-            <script>
-                filters();
-            </script>
-        </section>
-        <section id="openNotices">
-            <script>
-                for (let i = 0; i < 5; i++){
-                    cardPublicNotices("openNotices");
-                }             
-            </script>
+        <section>
+            <h1>Título do Edital</h1>
+            <div>
+                <h3>Data de Abertura: 20/05/2024</h3>
+                <h3>Data de Fechamento: 20/07/2024</h3>
+                <h3>Descrição do Edital</h3>
+            </div>
+            <div>
+                <embed src="./../../resources/consWeb.pdf" type="application/pdf">
+            </div>
         </section>
     </main>
     <script src="./../../components/header.js" defer></script>
