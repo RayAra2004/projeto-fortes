@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrever Projeto</title>
+
+    <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/instituicao/inscreverProjeto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./../../js/instituicao/inscreverProjeto.js" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <nav>
+                <button onclick="nextPart(1)">Parte 1</button>
+                <button onclick="nextPart(2)">Parte 2</button>
+                <button onclick="nextPart(3)">Parte 3</button>
+                <button onclick="nextPart(4)">Parte 4</button>
+            </nav>
+            <form action="" method="post">
+                <div class="part1">
+                    <div>
+                        <label for="name">Nome <span>*</span></label>
+                        <input placeholder="Nome Projeto" class="input_text" type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="initial_date">Data de Início <span>*</span></label>
+                        <input class="input_text" type="date" id="initial_date" name="initial_date" required>
+                    </div>
+                    <div>
+                        <label for="end_date">Data de Término <span>*</span></label>
+                        <input class="input_text" type="date" id="end_date" name="end_date" required>
+                    </div>
+                    <div>
+                        <label for="objective">Objetivo <span>*</span></label>
+                        <textarea placeholder="Objetivo" class="input_text input_text_area" type="text" id="objective" name="objective" required> </textarea>
+                    </div>
+                    <div>
+                        <label for="specificObjectives">Objetivos Específicos <span>*</span></label>
+                        <textarea placeholder="Objetivos Específicos" class="input_text input_text_area" type="text" id="specificObjectives" name="specificObjectives" required> </textarea>
+                    </div>
+                </div>
+                <div class="part1">
+                    <div>
+                        <label for="name">ODS <span>*</span></label>
+                        <select placeholder="Nome Projeto" class="input_text select" type="text" id="name" name="name" required>
+                            <option>Selecione uma ODS</option>
+                            <option value="1">Erradicação da Pobreza</option>
+                            <option value="2">Fome Zero e Agricultura Sustentável</option>
+                            <option value="3">Saúde e Bem-estar</option>
+                            <option value="4">Educação de Qualidade</option>
+                            <option value="5">Igualdade de Gênero</option>
+                            <option value="6">Água Potável e Saneamento</option>
+                            <option value="7">Energia Limpa e Sustentável</option>
+                            <option value="8">Trabalho Decente e Crescimento Econômico</option>
+                            <option value="9">Indústria, Inovação e Infraestrutura</option>
+                            <option value="10">Redução das Desigualdades</option>
+                            <option value="11">Cidades e Comunidades Sustentáveis</option>
+                            <option value="12">Consumo e Produção Responsáveis</option>
+                            <option value="13">Ação Contra a Mudança Global do Clima</option>
+                            <option value="14">Vida na Água</option>
+                            <option value="15">Vida Terrestre</option>
+                            <option value="16">Paz, Justiça e Instituições Eficazes</option>
+                            <option value="17">Parcerias e Meios de Implementação</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="generalObjectives">Objetivo Geral<span>*</span></label>
+                        <textarea placeholder="Objetivo" class="input_text input_text_area" type="text" id="generalObjectives" name="generalObjectives" required> </textarea>
+                    </div>
+                    <div>
+                        <label for="benefitedPublic">Público Beneficiário do Projeto<span>*</span></label>
+                        <textarea placeholder="Público Beneficiário do Projeto" class="input_text input_text_area" type="text" id="benefitedPublic" name="benefitedPublic" required> </textarea>
+                    </div>
+                    <div>
+                        <label for="justification">Justificativa <span>*</span></label>
+                        <textarea placeholder="Justificativa" class="input_text input_text_area" type="text" id="justification" name="justification" required> </textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header("instituicao");
+        })
+    </script>
+</body>
+</html>

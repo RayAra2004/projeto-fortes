@@ -23,26 +23,6 @@
     background-color: var(--blue-secundary-color);
 }
 
-form{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-form > div div{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-form label{
-    margin-bottom: 10px;
-}
-
-form label span{
-   color: #FF0000;
-}
-
 .divBtns{
     width: 100%;
     margin-top: 20px;
