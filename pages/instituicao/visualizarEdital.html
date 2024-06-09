@@ -9,25 +9,33 @@
     <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/instituicao/editaisAbertos.css">
+    <link rel="stylesheet" href="../../css/instituicao/visualizarEdital.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
+<script>
+    function navigateRegisterProject(){
+        window.location.href = "inscreverProjeto.html";
+    }
+</script>
 <body>
     <header></header>
     <main>
         <section>
             <h1>Título do Edital</h1>
-            <div>
+            <div class="informationsNotice">
                 <h3>Data de Abertura: 20/05/2024</h3>
                 <h3>Data de Fechamento: 20/07/2024</h3>
                 <h3>Descrição do Edital</h3>
             </div>
-            <div>
+            <div class="pdfNotice">
                 <embed src="./../../resources/consWeb.pdf" type="application/pdf">
+            </div>
+            <div class="divBtn">
+                <button class="btn" onclick="navigateRegisterProject()">INSCREVER-SE</button>
             </div>
         </section>
     </main>
