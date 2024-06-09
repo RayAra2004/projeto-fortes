@@ -181,6 +181,22 @@ h5{
     margin-bottom: 15px;
 }
 
+.cardVisitProject{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 132px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cardVisitProject > div{
+    border: 1px solid #000;
+    width: 300px;
+    padding: 5px;
+}
+
 main{
     display: flex;
     flex-direction: column;
