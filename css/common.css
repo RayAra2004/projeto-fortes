@@ -72,9 +72,16 @@ header nav a:hover{
     object-fit: cover;
     cursor: pointer;
 }
+h1{
+    font-size: 64px;
+}
 
 h2{
     font-size: 48px;
+}
+
+h3{
+    font-size: 36px;
 }
 
 h4{
@@ -174,6 +181,22 @@ h5{
     margin-bottom: 15px;
 }
 
+.cardVisitProject{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 132px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cardVisitProject > div{
+    border: 1px solid #000;
+    width: 300px;
+    padding: 5px;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -185,4 +208,62 @@ main{
 main > section{
     width: 80%;
     margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form > div div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+form label{
+    margin-bottom: 10px;
+}
+
+form label span{
+   color: #FF0000;
+}
+
+.select{
+    width: 315px;
+}
+
+.upload-area {
+    border: 2px dashed #cccccc;
+    border-radius: 10px;
+    width: 310px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.upload-area p {
+    color: #999999;
+    font-size: 16px;
+}
+
+.upload-area.dragover {
+    background-color: #e9e9e9;
+}
+
+#fileInput {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
 }

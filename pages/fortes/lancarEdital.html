@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortes - Lançar Edital</title>
+
+    <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/fortes/lancarEdital.css">
+
+    <script src="./../../js/fortes/lancarEdital.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <form action="" method="post" id="uploadForm">
+                <div>
+                    <div>
+                        <label for="name">Título do Edital <span>*</span></label>
+                        <input placeholder="Título do Edital" class="input_text" type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="initial_date">Data de Abertura <span>*</span></label>
+                        <input placeholder="Data de Abertura" class="input_text" type="date" id="initial_date" name="initial_date" required>
+                    </div>
+                    <div>
+                        <label for="end_date">Data de Fechamento <span>*</span></label>
+                        <input placeholder="Data de Fechamento" class="input_text" type="date" id="end_date" name="end_date" required>
+                    </div> 
+                    <div>
+                        <label for="description">Descrição do Edital <span>*</span></label>
+                        <input placeholder="Descrição do Edital" class="input_text input_text_area" type="text" id="description" name="description" required>
+                    </div>
+                    <div>
+                        <label for="ods">ODS <span>*</span></label>
+                        <select class="input_text select" id="ods" name="ods" required>
+                            <option>Selecione uma ODS</option>
+                            <option value="1">Erradicação da Pobreza</option>
+                            <option value="2">Fome Zero e Agricultura Sustentável</option>
+                            <option value="3">Saúde e Bem-estar</option>
+                            <option value="4">Educação de Qualidade</option>
+                            <option value="5">Igualdade de Gênero</option>
+                            <option value="6">Água Potável e Saneamento</option>
+                            <option value="7">Energia Limpa e Sustentável</option>
+                            <option value="8">Trabalho Decente e Crescimento Econômico</option>
+                            <option value="9">Indústria, Inovação e Infraestrutura</option>
+                            <option value="10">Redução das Desigualdades</option>
+                            <option value="11">Cidades e Comunidades Sustentáveis</option>
+                            <option value="12">Consumo e Produção Responsáveis</option>
+                            <option value="13">Ação Contra a Mudança Global do Clima</option>
+                            <option value="14">Vida na Água</option>
+                            <option value="15">Vida Terrestre</option>
+                            <option value="16">Paz, Justiça e Instituições Eficazes</option>
+                            <option value="17">Parcerias e Meios de Implementação</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">PDF do Edital <span>*</span></label>
+                        <div class="upload-area" id="uploadArea">
+                            <p id="uploadMessage">Clique aqui para selecionar o PDF ou arraste e solte aqui</p>
+                            <input type="file" id="fileInput" name="fileInput" accept="application/pdf" required>
+                        </div>
+                        <p id="errorMessage" class="error-message"></p>
+                    </div>
+                    <div class="divBtn">
+                        <button type="submit" class="btn">PUBLICAR EDITAL</button>
+                    </div>
+                </div>  
+            </form>
+        </section>
+    </main>
+    <script src="./../../components/header.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            header("fortes");
+        })
+    </script>
+</body>
+</html>

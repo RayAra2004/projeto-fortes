@@ -3,46 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editais Abertos</title>
+    <title>Fortes</title>
 
     <link rel="shortcut icon" href="../../imgs/png/logo_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/instituicao/editaisAbertos.css">
+    <link rel="stylesheet" href="../../css/fortes/index.css">
+
+    <script src="./../../components/cardVisitProject.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <script src="./../../components/cardPublicNotices.js"></script>
-    <script src="./../../components/filters.js"></script>
-    <script src="./../../js/instituicao/editaisAbertos.js"></script>
 </head>
 <script>
     function navigateIndex(){
-        window.location.href = '/pages/instituicao/'
+        window.location.href = './../fortes/'
     }
 </script>
 <body>
     <header></header>
     <main>
-        <section id="filters" class="filters">
+        <section id="sectionProjects">
             <script>
-                filters();
-            </script>
-        </section>
-        <section id="openNotices">
-            <script>
-                for (let i = 0; i < 5; i++){
-                    cardPublicNotices("openNotices");
-                }             
+                for(let i = 0; i < 5; i++){
+                    cardVisitProject('sectionProjects')
+                }
             </script>
         </section>
     </main>
     <script src="./../../components/header.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            header("instituicao");
+            header("fortes");
         })
     </script>
 </body>

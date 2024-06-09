@@ -28,10 +28,11 @@ function header(page){
             header.innerHTML = `
                 <img onclick="navigateIndex()" id="logo" src="./../../imgs/png/logo.png" alt="Logo com mãos dadas em forma de coração e escrita a palavra Fortes abaixo">
                 <nav>
-                    <a href="#">EDITAIS ABERTOS</a>
-                    <a href="">ACOMPANHAR PROJETOS</a>
-                    <a href="">MEU PERFIL</a>
-                    <a href="">AJUDA</a>
+                    <a href="lancarEdital.html">LANÇAR EDITAL</a>
+                    <a href="projetosAprovar.html">PROJETOS À APROVAR</a>
+                    <a href="projetosAndamento.html">PROJETOS EM ANDAMENTO</a>
+                    <a href="projetosConcluidos.html">PROJETOS CONCLUÍDOS</a>
+                    <a href="verRelatorios.html">VER RELATÓRIOS</a>
                     <a href="./../../">
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" 
