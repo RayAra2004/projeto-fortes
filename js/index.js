@@ -8,5 +8,5 @@ document.getElementById("formLogin").addEventListener("submit", function(e){
 });
 
 document.getElementById("signUp").addEventListener("click", function(e){
-    window.location = "./../pages/cadastro.html";
+    window.location = "./pages/cadastro.html";
 });
