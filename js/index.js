@@ -1,8 +1,8 @@
 document.getElementById("formLogin").addEventListener("submit", function(e){
     e.preventDefault();
-    if(e.target[0].value === "ong@gmail.com" && e.target[1].value === "ong123"){
+    if(e.target[0].value === "Donatario01" && e.target[1].value === "dona123"){
         window.location.href = "./pages/instituicao/index.html";
-    } else if(e.target[0].value === "adm@gmail.com" && e.target[1].value === "adm123"){
+    } else if(e.target[0].value === "Administrador" && e.target[1].value === "adm123"){
         window.location.href = "./pages/fortes/index.html";
     } 
 });
