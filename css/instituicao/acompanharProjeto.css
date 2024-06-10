@@ -1,0 +1,40 @@
+main{
+    height: 70%;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.informationsNotice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.pdfNotice{
+    flex: 1;
+    height: 537px;
+}
+
+embed{
+    width: 100%;
+    height: 100%;
+}
+
+.divBtn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 30px 0 30px 0;
+}
