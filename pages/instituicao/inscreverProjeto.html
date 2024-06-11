@@ -20,12 +20,13 @@
     <main>
         <section>
             <nav>
-                <button onclick="nextPart(1)">Parte 1</button>
-                <button onclick="nextPart(2)">Parte 2</button>
-                <button onclick="nextPart(3)">Parte 3</button>
-                <button onclick="nextPart(4)">Parte 4</button>
+                <button onclick="validate(1)" id="btnPart1" class="btn-background">Parte 1</button>
+                <button onclick="validate(2)" id="btnPart2">Parte 2</button>
+                <button onclick="validate(3)" id="btnPart3">Parte 3</button>
+                <button onclick="validate(4)" id="btnPart4">Parte 4</button>
             </nav>
             <form action="" method="post">
+                <h5 id="title">Resumo do Projeto</h5>
                 <div class="part1">
                     <div>
                         <label for="name">Nome <span>*</span></label>
@@ -50,8 +51,8 @@
                 </div>
                 <div class="part1">
                     <div>
-                        <label for="name">ODS <span>*</span></label>
-                        <select placeholder="Nome Projeto" class="input_text select" type="text" id="name" name="name" required>
+                        <label for="ods">ODS <span>*</span></label>
+                        <select class="input_text select" id="ods" name="ods" required>
                             <option>Selecione uma ODS</option>
                             <option value="1">Erradicação da Pobreza</option>
                             <option value="2">Fome Zero e Agricultura Sustentável</option>
@@ -85,11 +86,24 @@
                         <textarea placeholder="Justificativa" class="input_text input_text_area" type="text" id="justification" name="justification" required> </textarea>
                     </div>
                 </div>
+                <div class="part1 error">
+
+                </div>
+                <div class="part1 divBtnsForm">
+                    <button type="reset" class="btn">CANCELAR</button>
+                    <button type="button" onclick="validate(2)" class="btn">CONTINUAR</button>
+                </div>
+                <div class="part2">
+                    
+                </div>
+                <div class="part2">
+
+                </div>
             </form>
         </section>
     </main>
 
-    <script src="./../../components/header.js" defer></script>
+    <script src="./../../components/header.js" ></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             header("instituicao");

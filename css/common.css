@@ -267,3 +267,28 @@ form label span{
     margin-top: 10px;
     width: 100%;
 }
+
+.cardAction{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 103px;
+}
+
+.cardViewDocument{
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 132px;
+    padding: 0 40px;
+}
+
+.cardViewDocument > div {
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+}

@@ -6,11 +6,13 @@ form > div div{
     margin-bottom: 20px;
 }
 
-.select{
-    width: 315px;
+h5{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-nav{
+section nav{
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -18,7 +20,7 @@ nav{
     margin-bottom: 20px;
 }
 
-nav button{
+section nav button{
     background-color: transparent;
     color: #000;
     font-size: 20px;
@@ -31,4 +33,19 @@ nav button{
     text-align: center;
     line-height: 10px;
     cursor: pointer;
+}
+
+.btn-background{
+    background-color: var(--blue-secundary-color);
+}
+
+.divBtnsForm{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.error{
+    width: 100%;
 }
