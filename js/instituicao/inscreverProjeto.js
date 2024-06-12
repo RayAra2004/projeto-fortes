@@ -1,6 +1,12 @@
 function nextPart(nextPart){
-    const currentPart = JSON.parse(localStorage.getItem('currentPartRegisterProject'));
+    let currentPart = JSON.parse(localStorage.getItem('currentPartRegisterProject'));
+    if(!currentPart) {
+        localStorage.setItem('currentPartRegisterProject', JSON.stringify(1))
+        currentPart = 1;
+    }
     const title = document.getElementById("title");
+
+    console.log(nextPart, currentPart)
 
     if(nextPart === currentPart + 1 || nextPart < currentPart){
         const elements = document.querySelectorAll(`.part${nextPart}`);

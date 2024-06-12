@@ -1,4 +1,4 @@
-function cardTrackProject(id) {
+function cardTrackProject(id, link) {
     const element = document.getElementById(id);
     element.innerHTML += `
         <div class="cardProject">
@@ -9,7 +9,9 @@ function cardTrackProject(id) {
             <div>
                 <h5>Categoria do Projeto</h5>
             </div>
-            <button class="btn">Ver detalhes</button>
+            <a href="${link}">
+                <button class="btn">Ver detalhes</button>
+            </a>
         </div>
     `;
 }
