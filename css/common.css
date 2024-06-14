@@ -292,3 +292,15 @@ form label span{
     justify-content: space-between;
     width: 630px;
 }
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.ms-40{
+    margin-left: 40px;
+}
+
+.d-flex{
+    display: flex;
+}
