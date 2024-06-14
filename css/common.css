@@ -56,6 +56,34 @@ header nav{
     gap: 30px;
 }
 
+header .mobile{
+    display: none;
+}
+
+@media (max-width: 426px) {
+    header .mobile{
+        display: block;
+    }
+
+    header nav{
+        display: block;
+        padding: 10px;   
+    }
+
+    header nav a{
+        margin: 30px 0;
+    }
+
+    header .container-nav{
+        display: none;
+        background-color: var(--blue-secundary-color);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
 header nav a{
     color: #fff;
     text-decoration: none;
@@ -74,6 +102,14 @@ header nav a:hover{
 }
 h1{
     font-size: 64px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 425px) {
+    h2{
+        font-size: 52px;
+        overflow-wrap: break-word;
+    }
 }
 
 h2{
@@ -101,6 +137,16 @@ h5{
     padding-left: 15px;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
+}
+
+.show{
+    display: block!important;
+}
+
+@media (max-width: 320px) {
+    .input_text{
+        width: 280px;
+    }
 }
 
 .input_text::placeholder{

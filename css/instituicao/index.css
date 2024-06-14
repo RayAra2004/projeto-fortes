@@ -6,6 +6,7 @@ main {
 
 main > div{
     width: 80%;
+    max-width: 80%;
     background-color: var(--blue-primary-color);
     color: #fff;
     margin-top: 100px;
