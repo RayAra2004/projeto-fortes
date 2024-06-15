@@ -19,3 +19,14 @@
 .documents > div {
     margin-bottom: 20px;
 }
+
+@media (max-width: 769px){
+    .container-decision{
+        padding: 0;
+    }
+
+    .info > div{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

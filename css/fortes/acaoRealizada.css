@@ -29,3 +29,9 @@ main > section:nth-child(3){
     height: 405px;
     object-fit: cover;
 }
+
+@media (max-width: 426px) {
+    .container-img img{
+        width: 300px;
+    }
+}

@@ -17,3 +17,9 @@ form > div div{
 .divBtn{
     justify-content: center;
 }
+
+@media (max-width: 426px){
+    form > div div{
+        flex-direction: column;
+    }
+}

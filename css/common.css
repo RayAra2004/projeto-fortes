@@ -84,6 +84,36 @@ header .mobile{
     }
 }
 
+@media (max-width: 769px) {
+     
+    .header-fortes .mobile{
+        display: block;
+    }
+
+     .header-fortes nav{
+        display: block;
+        padding: 10px;   
+    }
+
+     .header-fortes nav a{
+        margin: 30px 0;
+    }
+
+    .header-fortes .container-nav{
+        display: none;
+        background-color: var(--blue-secundary-color);
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    h1, h2, h3, h4, h5{
+        word-wrap: break-word;
+    }
+}
+
 header nav a{
     color: #fff;
     text-decoration: none;
@@ -144,7 +174,7 @@ h5{
 }
 
 @media (max-width: 426px) {
-    .input_text{
+    .input_text, .input_text_area{
         width: 245px;
     }
 }
@@ -290,6 +320,24 @@ h5{
     padding: 5px;
 }
 
+@media (max-width: 426px) {
+    .cardVisitProject{
+        flex-direction: column;
+        min-height: 250px;
+        height: auto;
+    }
+
+    .cardVisitProject > div{
+        width: 90%!important;
+    }
+}
+
+@media (max-width: 769px) {
+    .cardVisitProject > div{
+        width: 30%;
+    }
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -359,6 +407,16 @@ form label span{
     transition: background-color 0.3s;
 }
 
+@media (max-width: 426px) {
+    .select{
+       width: 270px;
+    }
+
+    .upload-area{
+        width: 270px;
+    }
+}
+
 .upload-area p {
     color: #999999;
     font-size: 16px;
@@ -402,6 +460,31 @@ form label span{
     display: flex;
     justify-content: space-between;
     width: 630px;
+    gap: 10px;
+}
+
+@media (max-width: 769px) {
+    .cardViewDocument{
+        height: 300px;
+    }
+
+    .cardViewDocument, .cardViewDocument > div{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:20px
+    }
+
+    .cardAction{
+        flex-direction: column;
+        height: 130px;
+    }
+}
+
+@media (max-width: 321px) {
+    .btn{
+       width: 215px;
+       margin: 10px 0;
+    }
 }
 
 .mt-40{
