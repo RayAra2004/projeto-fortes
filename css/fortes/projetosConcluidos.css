@@ -1,3 +1,14 @@
 #concludedProjects > div{
     margin-bottom: 20px;
 }
+
+@media (max-width: 426px){
+    .cardProject > div{
+        flex-direction: column;
+    }
+
+    .cardProject {
+        height: 220px;
+        gap: 0;
+    }
+}
