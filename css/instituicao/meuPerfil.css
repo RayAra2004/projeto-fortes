@@ -29,3 +29,37 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 426px) {
+    .navProfile{
+        overflow-x: scroll;
+        margin-bottom: 15px;
+    }
+
+    .divBtns{
+        flex-wrap: wrap!important;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navProfile nav a{
+        min-width: 182px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 769px) {
+    .divBtns{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navProfile nav{
+        gap: 10px;
+    }
+
+    .navProfile nav a{
+       text-align: center;
+    }
+}
