@@ -35,6 +35,24 @@ section nav button{
     cursor: pointer;
 }
 
+@media (max-width:426px) {
+    section nav{
+        overflow-x: scroll;
+    }
+
+    section nav button{
+        min-width: 182px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 769px){
+    section nav{
+        width: 90%;
+        gap: 20px;
+    }
+}
+
 .btn-background{
     background-color: var(--blue-secundary-color);
 }
@@ -48,4 +66,54 @@ section nav button{
 
 .error{
     width: 100%;
+}
+
+#container_add_role{
+    justify-content: end;
+}
+
+table{
+    width: 600px;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+}
+
+thead{
+    background-color: #B9B9B9;
+    font-weight: bold;
+}
+
+th, td{
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+tr:hover{
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 426px) {
+    table{
+        width: 400px;
+    }
+
+    .container-table{
+        overflow-x: scroll;
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 769px) {
+    form > div div{
+        flex-direction: column;
+    }
+
+    .container-table{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
 }

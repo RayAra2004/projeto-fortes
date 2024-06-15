@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/instituicao/inscreverProjeto.css">
 
+    <script src="./../../components/rowTable.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -90,8 +92,8 @@
 
                 </div>
                 <div class="part1 divBtnsForm">
-                    <button type="reset" class="btn">CANCELAR</button>
-                    <button type="button" onclick="validate(2)" class="btn">CONTINUAR</button>
+                    <button type="reset"  onclick="validatePart(1)" class="btn">CANCELAR</button>
+                    <button type="button" onclick="validatePart(2)" class="btn">CONTINUAR</button>
                 </div>
                 <div class="part2">
                     <div>
@@ -108,18 +110,112 @@
                     </div>
                     <div>
                         <label for="workload">Carga Horária <span>*</span></label>
-                        <input placeholder="Carga Horária" class="input_text" type="text" id="workload" name="workload" required>
+                        <input placeholder="Carga Horária" class="input_text" type="number" id="workload" name="workload" required>
+                    </div>
+                    <div id="container_add_role">
+                        <button class="btn">Adicionar Profissional</button>
                     </div>
                 </div>
                 <div class="part2">
-                    <table>
+                    <table id="table_part2">
                         <thead>
-                            <td>Nome</td>
-                            <td>Nome</td>
-                            <td>Nome</td>
-                            <td>Nome</td>
+                            <tr>
+                                <th id="name_table">Nome</th>
+                                <td id="formation_table">Formação</td>
+                                <td id="function_table">Função</td>
+                                <td id="workload_table">Carga Horária Semanal</td>
+                            </tr>  
                         </thead>
+                        <tbody id="tbody_part2">
+                           <script>
+                                rowTable("tbody_part2", ["Marcos", "Psicólogo", "Assistente", "10"]);
+                           </script>
+                        </tbody>
                     </table>
+                </div>
+                <div class="part2 divBtnsForm">
+                    <button type="reset" class="btn" onclick="validatePart(1)">CANCELAR</button>
+                    <button type="button" onclick="validatePart(3)" class="btn">CONTINUAR</button>
+                </div>
+                <div class="part3">
+                    <div>
+                        <label for="goal">Meta <span>*</span></label>
+                        <input placeholder="Meta" class="input_text" type="text" id="goal" name="goal" required>
+                    </div>
+                    <div>
+                        <label for="indicators">Indicador(es) <span>*</span></label>
+                        <input placeholder="Indicador(es)" class="input_text input_text_area" type="text" id="indicators" name="indicators" required>
+                    </div>
+                </div>
+                <div class="part3">
+                    <div>
+                        <label for="amount">Valor(R$) <span>*</span></label>
+                        <input placeholder="Valor(R$)" class="input_text" type="number" step="0.01" id="amount" name="amount" required>
+                    </div>
+                    <div>
+                        <label for="methodology">Metodologia<br> de Execução <span>*</span></label>
+                        <input placeholder="Metodologia de Execução" class="input_text input_text_area" type="text" id="methodology" name="methodology" required>
+                    </div>
+                </div>
+                <div class="part3 mt-40 d-flex container-table">
+                    <table id="table_part3">
+                        <thead>
+                            <tr>
+                                <th id="step_table">Etapa/Atividade</th>
+                                <td id="amount_table">Valor</td>
+                                <td id="initial_date_table">Data de Início</td>
+                                <td id="end_date_table">Data de Término</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_part3">
+                           <script>
+                                rowTable("tbody_part3", ["Doar Agasalho", "5000", "20/06/2024", "15/07/2024"]);
+                           </script>
+                        </tbody>
+                    </table>
+                    <button class="btn ms-40">Adicionar Etapa/Atividade</button>       
+                </div>
+                <div class="part3 divBtnsForm mt-40">
+                    <button type="reset" class="btn" onclick="validatePart(1)">CANCELAR</button>
+                    <button type="button" onclick="validatePart(4)" class="btn">CONTINUAR</button>
+                </div>
+                <div class="part4">
+                    <div>
+                        <label for="material_name">Nome <span>*</span></label>
+                        <input placeholder="Nome" class="input_text" type="text" id="material_name" name="material_name" required>
+                    </div>
+                    <div>
+                        <label for="unitary_value">Valor Unitário <span>*</span></label>
+                        <input placeholder="Valor Unitário" class="input_text" type="number" step="0.01" id="unitary_value" name="unitary_value" required>
+                    </div>
+                </div>
+                <div class="part4">
+                    <div>
+                        <label for="quantity">Quantidade <span>*</span></label>
+                        <input placeholder="Quantidade" class="input_text" type="number" id="quantity" name="quantity" required>
+                    </div>
+                </div>
+                <div class="part4 mt-40 d-flex container-table">
+                    <table id="table_part4">
+                        <thead>
+                            <tr>
+                                <th id="material_name_table">Nome</th>
+                                <td id="quantity_table">Quantidade</td>
+                                <td id="unitary_value_table">Valor Unitário</td>
+                                <td id="total_value_table">Valor Total</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_part4">
+                           <script>
+                                rowTable("tbody_part4", ["Vassouras", "20", "R$4,50", "R$90,00"]);
+                           </script>
+                        </tbody>
+                    </table>
+                    <button class="btn ms-40">Adicionar Equipamento/Material</button>       
+                </div>
+                <div class="part4 divBtnsForm mt-40">
+                    <button type="reset" class="btn" onclick="validatePart(1)">CANCELAR</button>
+                    <button type="submit" class="btn">Submeter Projeto</button>
                 </div>
             </form>
         </section>
